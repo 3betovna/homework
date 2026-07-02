@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin:20px;
+    min-width: 200px;
+}
+
+caption, tr, th, td {
+    border: 1px solid #131313;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: none;
+}
+
+.days {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.color__red {
+    color: #d11010;
+}
+
+.numbers {
+    text-align: center;
+}
+
