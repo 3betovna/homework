@@ -1,0 +1,48 @@
+html {
+    font-family: sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1320px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+}
+
+.article {
+    max-width: 284px;
+}
+
+.article-content__title {
+    max-width: 244px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #2c332f;
+}
+
+.article-content__link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #3596ed;
+}
+
+.article-3 {
+    flex-grow: 1;
+} 

@@ -1,0 +1,139 @@
+html {
+    font-family: "Ubuntu", sans-serif; 
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.article {
+    padding-top: 80px;
+    margin-bottom: 120px;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.article__title {
+    max-width: 596px;
+    font-family: "Oswald";
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 115%;
+    color: #2c332f;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.article__title-main {
+    font-size: 48px;
+}
+
+.article__text {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #535755;
+    line-height: 130%;
+}
+
+.article-decor {
+    position: relative;
+}
+
+.article-decor::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: url("../images/points.svg") no-repeat;
+    width: 528px;
+    height: 48px;
+}
+
+.article-decor-top::before {
+    top: 165px;
+    left: -345px;
+}
+
+.article__img {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+.article-group {
+    margin-bottom: 80px;
+}
+
+.article__title-medium {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.article-group__text {
+    margin-bottom: 20px;
+    max-width: 744px;
+}
+
+.article-group__text,
+.article__list,
+.article-review__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #535755;
+}
+
+.article__list {
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+.article__list-item {
+    margin-bottom: 12px;
+}
+
+.article__list-item::marker {
+    font-size: 22px;
+    color: #3596ED;
+}
+
+.article-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -105%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    background-color: #3596ED;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.article-review__video {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.article-decor-bottom::before {
+    right: -345px;
+    bottom: 175px;
+}
