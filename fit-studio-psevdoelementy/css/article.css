@@ -55,6 +55,7 @@ p {
 }
 
 .article-decor {
+    margin-top: 60px;
     position: relative;
 }
 
@@ -73,7 +74,6 @@ p {
 }
 
 .article__img {
-    margin-top: 60px;
     width: 100%;
 }
 
