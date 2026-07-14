@@ -27,6 +27,10 @@ p {
     padding: 0 15px;
 }
 
+.article-inner {
+    margin-bottom: 80px;
+}
+
 .article__title {
     max-width: 596px;
     font-family: "Oswald";
@@ -70,7 +74,6 @@ p {
 
 .article__img {
     margin-top: 60px;
-    margin-bottom: 80px;
     width: 100%;
 }
 
@@ -111,11 +114,20 @@ p {
     color: #3596ED;
 }
 
+.article-decor {
+    margin-bottom: 40px;
+}
+
+.article-decor-bottom::before {
+    right: -350px;
+    bottom: 136px;
+}
+
 .article-play-btn {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -105%);
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,11 +141,6 @@ p {
 }
 
 .article-review__video {
-    margin-bottom: 40px;
     width: 100%;
 }
 
-.article-decor-bottom::before {
-    right: -345px;
-    bottom: 175px;
-}
