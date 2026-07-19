@@ -1,0 +1,115 @@
+html,
+body {
+    font-family: "Ubuntu", sans-serif; 
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+button {
+    outline: none;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.text {
+    font-weight: 400;
+    line-height: 130%;
+    color: #535755;
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 19px 32px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #3596ed;
+    color: #fff;
+    font-size: 15px;
+    transition: opacity 0.2s background-color 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.btn:not(:disabled):active {
+    background-color: #0375e0;
+}
+
+button.btn:disabled {
+    opacity: 0.65;
+    cursor: default;
+}
+
+.section {
+    margin-bottom: 140px;
+}
+
+.title-large {
+    max-width: 596px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 115%;
+    color: #2c332f;
+    margin-bottom: 40px;
+}
+
+.title-medium {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 115%;
+    text-transform: uppercase;
+    color: #2c332f;
+    font-size: 24px;
+}
+
+.text-sub {
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #858E8A;
+}
+
+a:focus-visible,
+button:focus-visible,
+.faq__accordion-title:focus-visible {
+    outline: 2px solid #3596ed;
+    outline-offset: 1px;
+}
