@@ -1,0 +1,122 @@
+.hero {
+    position: relative;
+    padding-top: 80px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 106px;
+    width: 100%;
+    height: 48px;
+    background: url("../images/points-long.svg") repeat-x;
+}
+
+.hero-container {
+    display: flex;
+    /* align-items: center; думаю, здесь не нужно это свойство оно лишнее, тайтл должен быть наверху, а не по центру */
+    gap: 28px;
+}
+
+.hero__title {
+    margin-bottom: 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    line-height: 115%;
+    text-transform: uppercase;
+    color: #2c332f;
+    font-size: 62px;
+}
+
+.hero__title-color {
+    font-weight: 600;
+    color: #3596ed;
+}
+
+.hero__text {
+    margin-bottom: 140px;
+    max-width: 440px;
+}
+
+.hero__images {
+    position: relative;
+    display: flex;
+}
+
+.hero__text-selection {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 161px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 22px;
+    background-color: #fff;
+    border: 1px solid #535755;
+    text-align: center;
+}
+
+.news__wrapper {
+    display: flex;
+    gap: 28px;
+}
+
+.news__card {
+    display: flex;
+    flex-direction: column;
+    max-width: 284px;
+    background-color: #fff;
+    border: 1px solid #d3cbd9;
+    overflow: hidden;
+}
+
+.news__header-img {
+    display: block;
+}
+
+.news__info {
+    padding: 20px 20px 0;
+    margin-bottom: 12px;
+}
+
+.news__info-date {
+    display: inline-block;
+    margin-bottom: 8px;
+    letter-spacing: 0.04em;
+}
+
+.news__subtitle {
+    font-weight: 400;
+    line-height: 130%;
+    color: #2c332f;
+    font-size: 16px;
+}
+
+.news__footer {
+    padding: 0 20px 20px;
+    margin-top: auto;
+}
+
+.news__footer-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    line-height: 130%;
+    color: #3596ed;
+    font-size: 16px;
+}
+
+.news__footer-link::after {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 9px;
+    background-image: url("../images/arrow-right-icon.svg");
+    transition: transform 0.2s;
+}
+
+.news__footer-link:hover::after {
+    transform: translateX(5px);
+}

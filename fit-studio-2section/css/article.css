@@ -1,0 +1,112 @@
+.article {
+    padding-top: 80px;
+    margin-bottom: 120px;
+}
+
+.article-inner {
+    margin-bottom: 80px;
+}
+
+
+.article__text {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #535755;
+    line-height: 130%;
+}
+
+.article-decor {
+    margin-top: 60px;
+    position: relative;
+}
+
+.article-decor::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: url("../images/points.svg") no-repeat;
+    width: 528px;
+    height: 48px;
+}
+
+.article-decor-top::before {
+    top: 100px;
+    left: -345px;
+}
+
+.article__img {
+    width: 100%;
+}
+
+.article-group {
+    margin-bottom: 80px;
+}
+
+.article__title-medium {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.article-group__text {
+    margin-bottom: 20px;
+    max-width: 744px;
+}
+
+.article-group__text,
+.article__list,
+.article-review__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #535755;
+}
+
+.article__list {
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+.article__list-item {
+    margin-bottom: 12px;
+}
+
+.article__list-item::marker {
+    font-size: 22px;
+    color: #3596ED;
+}
+
+.article-decor {
+    margin-bottom: 40px;
+}
+
+.article-decor-bottom::before {
+    right: -350px;
+    bottom: 136px;
+}
+
+.article-review__title {
+    font-size: 36px
+}
+
+.article-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    background-color: #3596ED;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.article-review__video {
+    width: 100%;
+}
+
