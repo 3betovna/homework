@@ -1,0 +1,153 @@
+.article {
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+
+.article-mb-1 {
+    margin-bottom: 80px;
+}
+
+.article__text {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #535755;
+    line-height: 130%;
+}
+
+.article-decor {
+    position: relative;
+}
+
+.article-decor-top::before {
+    top: 100px;
+    left: 0;
+}
+
+.article-group {
+    margin-bottom: 80px;
+}
+
+.article__title-medium {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.article-group__text {
+    margin-bottom: 20px;
+    max-width: 744px;
+}
+
+.article-group__text,
+.article__list,
+.article-review__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #535755;
+}
+
+.article__list {
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+.article__list-item {
+    margin-bottom: 12px;
+}
+
+.article__list-item::marker {
+    font-size: 22px;
+    color: #3596ED;
+}
+
+.article-decor {
+    margin-bottom: 40px;
+}
+
+.article-decor-bottom::before {
+    right: 0;   /* декор пропал  он как бы есть (если задать -345px, но он не растягивается вправо на всю ширину), почему-то с article-decor-top всё ок, а с bottom не ок */
+    bottom: 136px;
+}
+
+.article-review__title {
+    font-size: 36px
+}
+
+.article-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    background-color: #3596ED;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.article-play-btn:hover {
+    background-color: #38a2ff;
+}
+
+.article-play-btn:active {
+    background-color: #0375e0;
+}
+
+.article-review__video {
+    width: 100%;
+}
+
+@media (width <=768px) {
+    .article-decor::before {
+        display: none;
+    }
+
+    .article__title-medium {
+        font-size: 32px;
+    } 
+
+    .article-mb-1 {
+        margin-bottom: 60px;
+    }
+
+}
+
+@media (width <= 576px) {
+    .article {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    .article__title-medium {
+        font-size: 28px;
+    } 
+
+    .article-mb-1 {
+    margin-bottom: 40px;
+    }
+    
+    .article-mb-2 {
+        margin-bottom: 30px;
+    }
+
+    .article-play-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .play {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+
+
