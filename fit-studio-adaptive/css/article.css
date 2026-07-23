@@ -71,6 +71,10 @@
     bottom: 136px;
 }
 
+.article-mb-2 {
+    margin-bottom: 40px;
+}
+
 .article-review__title {
     font-size: 36px
 }
