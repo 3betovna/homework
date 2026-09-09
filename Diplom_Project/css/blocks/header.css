@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+.header__list-link {
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 14px;
+}
+
+.header__dropdown {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+}
+
+/* Тут возникли сложности с добавлением стрелки и выпадающего списка на неё, нужна помощь */
+.header__dropdown::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    background: url("../../icons/sprite.svg#arrow-down") no-repeat center / contain;
+}
+
+.header__actions {
+    display: flex;
+    gap: 13px;
+}
