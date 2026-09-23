@@ -1,0 +1,84 @@
+.preview {
+    margin-top: 75px;
+    margin-bottom: 53px;
+    padding-bottom: 72px;
+}
+
+.preview__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.preview__header {
+    margin-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preview__title {
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 125%;
+    text-align: center;
+    color: #000;
+}
+
+.preview__text {
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    max-width: 620px;
+    color: #000;
+}
+
+.preview__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.preview__card-laptop {
+    box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+    min-width: 639px;
+}
+
+.preview__label-link--right {
+    display: block;
+    font-weight: 400;
+font-size: 15px;
+line-height: 128%;
+text-align: right;
+color: #000;
+}
+
+.preview__card-title--right {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: right;
+    color: #000;
+}
+
+
+.preview__card-phones {
+    box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+    grid-row-start: span 2;
+}
+
+.preview__card-tablet {
+    box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+    grid-row-start: span 2;
+}
+
+.preview__card-watch {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 56px;
+}
+
+

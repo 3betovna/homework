@@ -17,4 +17,17 @@
     <symbol id="menu-cross" viewBox="0 0 24 24" fill="none">
 <path d="M18 6L6 18M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </symbol>
+<symbol id="arrow-back" width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 25L1 13L13 1" stroke="#08090D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</symbol>
+<symbol id="arrow-next" width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_29_57)">
+    <path d="M1 1L13 13L1 25" stroke="#08090D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+    <clipPath id="clip0_29_57">
+    <rect width="14" height="26" fill="white" />
+    </clipPath>
+</defs>
+</symbol>
 </svg>

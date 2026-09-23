@@ -1,17 +1,26 @@
 @font-face {
-font-family: Inter;
+font-family: "Inter";
 src: local("Inter Regular"), local("Inter-Regular"),
-    url("../fonts/Inter-Regular.woff2") format("woff2");
+    url("../../fonts/Inter-Regular.woff2") format("woff2");
 font-weight: 400;
 font-style: normal;
 font-display: swap;
 }
 
 @font-face {
-font-family: ReadexPro;
+font-family: "Readex Pro";
 src: local("ReadexPro Regular"), local("Readex Pro Regular"), local("ReadexPro-Regular"),
-    url("../fonts/ReadexPro-Regular.woff2") format("woff2");
+    url("../../fonts/ReadexPro-Regular.woff2") format("woff2");
 font-weight: 400;
+font-style: normal;
+font-display: swap;
+}
+
+@font-face {
+font-family: "Readex Pro";
+src: local("ReadexPro SemiBold"), local("Readex Pro SemiBold"), local("ReadexPro-SemiBold"),
+    url("../../fonts/ReadexPro-SemiBold.woff2") format("woff2");
+font-weight: 600;
 font-style: normal;
 font-display: swap;
 }

@@ -56,3 +56,10 @@ textarea,
 select {
     font: inherit;
 }
+
+.explore__link {
+    margin-top: 11px;
+    padding: 14px 53px;
+    border: 1px solid #000;
+    border-radius: 200px;
+}

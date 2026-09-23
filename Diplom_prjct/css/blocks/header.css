@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header__container {
     padding-top: 30px;
 }
 
@@ -14,6 +17,7 @@
         min-width: 297px;
         padding-top: 144px;
         padding-right: 15px;
+        background-color: #fff;
         box-shadow: 5px 0 20px black;
         opacity: 0;
         visibility: hidden;
