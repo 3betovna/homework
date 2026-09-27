@@ -1,0 +1,128 @@
+.preview {
+    margin-top: 75px;
+    margin-bottom: 53px;
+    padding-bottom: 72px;
+}
+
+.preview__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.preview__header {
+    margin-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preview__title {
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 125%;
+    text-align: center;
+    color: #000;
+}
+
+.preview__text {
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    max-width: 620px;
+    color: #000;
+}
+
+.preview__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 16px;
+}
+
+
+.preview__card {
+    box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+}
+
+.preview__card-laptop,
+.preview__card-watch {
+    padding-left: 42px;
+}
+
+.preview__content {
+    padding-right: 42px;
+}
+
+.preview__label-link {
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 128%;
+    text-align: center;
+    color: #000;
+}
+
+.preview__label-link--right {
+    text-align: right;
+}
+
+.preview__card-title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    max-width: 192px;
+    margin-left: auto;
+    text-align: center;
+    color: #000;
+}
+
+.preview__card-title--right {
+    text-align: right;
+}
+
+.preview__card-phones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    grid-row-start: span 2;
+}
+
+.preview__img-phones {
+    padding-left: 16px;
+}
+
+.preview__card-phones .preview__content {
+    padding-right: 0;
+}
+
+.preview__card-phones .preview__card-title {
+    max-width: 250px;
+}
+    
+.preview__card-tablet {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    grid-row-start: span 2;
+}
+
+.preview__card-tablet .preview__content {
+    padding-right: 0;
+}
+
+.preview__card-tablet .preview__card-title {
+    max-width: 233px;
+}
+
+.preview__card-watch {
+    display: flex;
+    align-items: center;
+    transform: translateY(56px);
+}
+
+
