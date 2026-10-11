@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base/index.css">
+    <link rel="shortcut icon" href="./icons/nike-favicon-48x48.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+    <script defer src="./js/index.js" type="module"></script>
+    <title>California</title>
+</head>
+<body class="page__body">
+    <header class="header">
+    <div class="container header__container">
+            <a class="header__logo" href="#">
+                <img class="header__logo-img" src="./icons/logo.svg" alt="California logo">
+            </a>
+            <nav class="menu header__menu" id="header__menu" aria-label="Main menu" style>
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">all products</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link menu__dropdown" href="#">Solutions</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Support</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <button class="header__actions-btn" title="Search" aria-label="Search">
+                    <svg width="24" height="24">
+                        <use class="header__actions-icon" href="./icons/sprite.svg#search"></use>
+                    </svg>
+                </button>
+                <button class="header__actions-btn" title="Cart" aria-label="Cart">
+                    <svg width="24" height="24">
+                        <use class="header__actions-icon" href="./icons/sprite.svg#cart"></use>
+                    </svg>
+                </button>
+                <button class="header__burger burger">
+                    <svg width="24" height="24">
+                        <use class="burger__icon-menu" href="./icons/sprite.svg#menu-burger"></use>
+                        <use class="burger__icon-cross" href="./icons/sprite.svg#menu-cross"></use>
+                    </svg>
+                </button>
+            </div>
+    </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+        <div class="container hero__container">
+            <div class="hero__slider-wrapper">
+                <button class="hero__slider-btn hero__slider-btn--prev" aria-label="Back">
+                    <svg width="14" height="26">
+                        <use class="hero__slider-btn-icon" href="./icons/sprite.svg#arrow-slide"></use>
+                    </svg>
+                </button>
+
+                <div class="swiper hero__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide hero__banner">
+                            <div class="hero__content">
+                    <h1 class="hero__title">
+                        The new phones are here take a look.
+                    </h1>
+                    <p class="hero__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.
+                    </p>
+                    <a class="explore__link-btn hero__link" href="#">Explore</a>
+                            </div>
+                    <img class="swiper-slide__img" src="./images/hero-phone-slide-1.png" width="647" height="550" alt="Phones">
+                        </div>
+                    </div>
+                <div class="swiper-pagination hero__pagination"></div> 
+                </div>
+                <button class="hero__slider-btn hero__slider-btn--next" aria-label="Next">
+                    <svg width="14" height="26">
+                        <use class="hero__slider-btn-icon" href="./icons/sprite.svg#arrow-slide"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+        <section class="preview">
+            <div class="container preview__container">
+                <div class="preview__header">
+                    <h2 class="preview__title general__title">Shop our latest offers and categories</h2>
+                    <p class="preview__text general__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="preview__grid">
+                    <article class="preview__card preview__card-laptop">
+                        <img class="preview__img preview__img-laptop" src="./images/preview/laptop-preview.jpg" width="500" height="377" alt="Laptop">
+                        <div class="preview__content">
+                            <a class="preview__label-link preview__label-link--right" href="#">Laptops</a>
+                            <h3 class="preview__card-title preview__card-title--right"><a href="#" class="preview__title-link">True Laptop Solution</a></h3>
+                        </div>
+                    </article>
+                    <article class="preview__card preview__card-phones">
+                        <img class="preview__img preview__img-phones" src="./images/preview/phones-preview.jpg" width="405" height="367" alt="Phones">
+                        <div class="preview__content">
+                            <a class="preview__label-link" href="#">Phones</a>
+                            <h3 class="preview__card-title"><a href="#" class="preview__title-link">Your day to day life</a></h3>
+                        </div>
+                    </article>
+                    <article class="preview__card preview__card-tablet">
+                        <img class="preview__img" src="./images/preview/tablet-preview.jpg" width="500" height="377" alt="Tablet">
+                        <div class="preview__content">
+                            <a class="preview__label-link" href="#">Tablet</a>
+                            <h3 class="preview__card-title"><a href="#" class="preview__title-link">Empower your work</a></h3>
+                        </div>
+                    </article>
+                    <article class="preview__card preview__card-watch">
+                        <img class="preview__img" src="./images/preview/watch-preview.jpg" width="381" height="270" alt="Watch">
+                        <div class="preview__content">
+                            <a class="preview__label-link preview__label-link--right" href="#">Watch</a>
+                            <h3 class="preview__card-title preview__card-title--right"><a href="#" class="preview__title-link">Not just stylisht</a></h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="container products__container">
+                <div class="products__header">
+                    <h2 class="products__title general__title">Save on our most selled items.</h2>
+                    <p class="products__text general__text">Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</p>
+                </div>
+                <div class="products__grid">
+                    <article class="products__card">
+                        <img class="products__img" src="./images/products/macbook-pro-13.png" width="303" height="270" alt="">
+                            <h3 class="products__card-title"><a class="products__card-link" href="#">MacBook Pro 13</a></h3>
+                            <p class="products__card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                        <data class="products__card-price" itemprop="price" value="1200.00">$ 1,200.00 USD</data>
+                    </article>
+                    <article class="products__card">
+                        <img class="products__img" src="./images/products/smart-galaxy-watch.png" width="303" height="270" alt="">
+                        <h3 class="products__card-title"><a class="products__card-link" href="#">Smart Galaxy Watch 3</a></h3>
+                        <p class="products__card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                        <data class="products__card-price" itemprop="price" value="199.00">$ 199.00 USD</data>
+                    </article>
+                    <article class="products__card">
+                        <img class="products__img" src="./images/products/macbook-air-m1.png" width="303" height="270" alt="">
+                        <h3 class="products__card-title"><a class="products__card-link" href="#">MacBook Air M1</a></h3>
+                        <p class="products__card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                        <data class="products__card-price" itemprop="price" value="1009.00">$ 1,009.00 USD</data>
+                    </article>
+                    <article class="products__card">
+                        <img class="products__img" src="./images/products/ipad.png" width="303" height="270" alt="">
+                        <h3 class="products__card-title"><a class="products__card-link" href="#">iPad</a></h3>
+                        <p class="products__card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                        <data class="products__card-price" itemprop="price" value="610.00">$ 610.00 USD</data>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="collections">
+            <div class="container collections__container">
+                <div class="collections__header">
+                    <h2 class="collections__title general__title">See the best around here</h2>
+                    <p class="collections__text general__text">Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</p>
+                </div>
+                <div class="collections__grid">
+                    <article class="collections__card">
+                        <header class="collections__card-header">
+                            <h3 class="collections__card-title">Latest and gratest</h3>
+                            <p class="collections__card-label">Smart light bulb pack</p>
+                        </header>
+                        <a class="explore__link-btn collections__link-btn" href="#">Explore</a>
+                        <img class="collections__img" src="./images/collections/watch-collections.png" alt="">
+                    </article>
+                    <article class="collections__card">
+                        <header class="collections__card-header">
+                            <h3 class="collections__card-title">Best selling</h3>
+                            <p class="collections__card-label">Smart light bulb pack</p>
+                        </header>
+                        <a class="explore__link-btn collections__link-btn" href="#">Explore</a>
+                        <img class="collections__img" src="./images/collections/best-selling-collections.png" alt="">
+                    </article>
+                    <article class="collections__card">
+                        <header class="collections__card-header">
+                            <h3 class="collections__card-title">Every product</h3>
+                            <p class="collections__card-label">Smart light bulb pack</p>
+                        </header>
+                        <a class="explore__link-btn collections__link-btn" href="#">Explore</a>
+                        <img class="collections__img" src="./images/collections/every-product-collections.png" alt="">
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="ideas">
+            <div class="container ideas__container">
+                <div class="ideas__header">
+                    <h2 class="ideas__title general__title">Ideas have a place here</h2>
+                    <p class="ideas__subtitle general__text">Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</p>
+                </div>
+                <div class="ideas__content">
+                    <img class="ideas__img" src="./images/ideas/ideas-img.jpg" alt="">
+                    <ul class="ideas__list">
+                        <li class="ideas__list-item">We Make It Easy To Find The Great Design Talent, Easier...</li>
+                        <li class="ideas__list-item">Road Design Handbook For The International Road...</li>
+                        <li class="ideas__list-item">The Best Kept Secrets About Creative People</li>
+                        <li class="ideas__list-item">We Make It Easy To Find The Great Design Talent, Easier...</li>
+                    </ul>
+                </div>
+                <a class="ideas__link" href="#">See all</a>
+            </div>
+        </section>
+        <section class="subscribe">
+            <div class="container subscribe__container">
+                <h2 class="subscribe__title general__title">Looking for anything else?</h2>
+                <form class="subscribe__search-form" role="search">
+                    <input class="subscribe__search-input" type="search" name="search" placeholder="Search keyword" aria-label="Search keyword">
+                </form>
+                <ul class="subscribe__tags">
+                    <li class="subscribe__tag">
+                        <button class="subscribe__tag-btn" type="button" data-tag="iPhone">iPhone</button>
+                    </li>
+                    <li class="subscribe__tag">
+                        <button class="subscribe__tag-btn" type="button" data-tag="Charger">Charger</button>
+                    </li>
+                    <li class="subscribe__tag">
+                        <button class="subscribe__tag-btn" type="button" data-tag="Gift">Gift</button>
+                    </li>
+                    <li class="subscribe__tag">
+                        <button class="subscribe__tag-btn" type="button" data-tag="Google Pixel 3">Google Pixel 3</button>
+                    </li>
+                    <li class="subscribe__tag">
+                        <button class="subscribe__tag-btn" type="button" data-tag="Keyboard">Keyboard</button>
+                    </li>
+                    <li class="subscribe__tag">
+                        <button class="subscribe__tag-btn" type="button" data-tag="13 Pro Max">13 Pro Max</button>
+                    </li>
+                    <li class="subscribe__tag">
+                        <button class="subscribe__tag-btn" type="button" data-tag="iPhone 12">iPhone 12</button>
+                    </li>
+                    <li class="subscribe__tag">
+                        <button class="subscribe__tag-btn" type="button" data-tag="Laptop">Laptop</button>
+                    </li>
+                    <li class="subscribe__tag">
+                        <button class="subscribe__tag-btn" type="button" data-tag="Mobile">Mobile</button>
+                    </li>
+                </ul>
+                <div class="subscribe__banner">
+                    <h2 class="subscribe__banner-title general__title">Never miss a thing</h2>
+                    <p class="subscribe__banner-text">Sign up for texts to be notified about our best offers on the perfect gifts.</p>
+                    <img class="subscribe__banner-img" src="./images/subscribe/subscribe-img.png" width="233"  height="200">
+                <form class="subscribe__banner-form">
+                <input class="subscribe__banner-input" type="email" name="email" placeholder="Your email">
+                <button class="subscribe__banner-btn" type="submit">Sign up</button>
+                </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__info">
+                <a class="footer__logo" href="#">
+                    <img class="footer__logo-img" src="./icons/logo.svg" alt="">
+                </a>
+                <p class="footer__subscribe"><a class="footer__subscribe-link" href="#">Sign up for texts to be notified about our best offers on the perfect gifts.</a>
+                </p>
+            </div>
+            <div class="footer__nav">
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <p class="footer__menu-title">All products</p>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Phones</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Watch</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Tablet</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Laptops</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <p class="footer__menu-title">Company</p>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">About</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Support</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <p class="footer__menu-title">Support</p>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Style Guide</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Licensing</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Change Log</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <p class="footer__menu-title">Follow Us</p>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Instagram</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Facebook</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">LinkedIn</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Youtube</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+            <div class="footer__bottom">
+                <div class="container">
+                <p class="footer__credits">
+                    <a class="footer__credits-link" href="#">Made By: <span class="footer__credits-ff">Azwedo</span></a>
+                </p>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>

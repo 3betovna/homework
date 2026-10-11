@@ -1,0 +1,27 @@
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+.menu__list-link {
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 14px;
+}
+
+.menu__dropdown {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.menu__dropdown::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    background: url("../../icons/arrow-down.svg") no-repeat center / contain;
+}
