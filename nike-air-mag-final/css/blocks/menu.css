@@ -1,0 +1,32 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
+.menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+}
+
+.menu__list-link {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 130%;
+    color: var(--main-color);
+    -webkit-transition: color var(--transition-time);
+    transition: color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+    .menu__list-link:hover {
+    color: var(--accent-color);
+    }
+}
+
