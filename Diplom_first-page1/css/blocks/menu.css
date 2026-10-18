@@ -1,0 +1,47 @@
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+.menu__list-link {
+    position: relative;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 14px;
+}
+
+.menu__list-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 1px;
+    background: #000;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform var(--transition-time);
+    pointer-events: none;
+}
+
+.menu__list-link:hover::before {
+    transform: scaleX(1);
+}
+
+
+.menu__dropdown {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.menu__dropdown::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    background: url("../../icons/arrow-down.svg") no-repeat center / contain;
+}
