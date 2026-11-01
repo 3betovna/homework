@@ -67,5 +67,8 @@ function getTimeOfDay(hour) {
     return "Вечер";
 }
 
-console.log(getTimeOfDay(18));
+const userInput = prompt("Введите время (час) от 0 до 23:");
+const hourNumber = Number(userInput);
+
+console.log(getTimeOfDay(hourNumber));
 
