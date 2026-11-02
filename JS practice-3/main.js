@@ -58,17 +58,36 @@ const password = prompt("Введите пароль:");
 const result = checkAccess(username, password);
 console.log(result);
 
-
+// Задача 3.
 
 function getTimeOfDay(hour) {
+    if (hour < 0 || hour > 23) {
+        return "Некорректное время";
+    }
     if (hour >= 0 && hour < 6) return "Ночь";
     if (hour >= 6 && hour < 12) return "Утро";
     if (hour >= 12 && hour < 17) return "День";
     return "Вечер";
 }
 
+
 const userInput = prompt("Введите время (час) от 0 до 23:");
 const hourNumber = Number(userInput);
 
 console.log(getTimeOfDay(hourNumber));
 
+// Задача 4.
+
+function findFirstEven(start, end) {
+    for (let i = start; i <= end; i++) {
+        if (i % 2 === 0) {
+            return i;
+        }
+    }
+    return "Чётных чисел нет";
+}
+
+const start = +prompt("Введите первое число:");
+const end = +prompt("Введите последнее число:");
+
+console.log(findFirstEven(start, end));
